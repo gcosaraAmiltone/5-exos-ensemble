@@ -1,0 +1,31 @@
+.cardLike {
+  display: flex;
+  width: 70%;
+  background-color: none;
+  margin-top: 1em;
+  .socials {
+    margin-right: 1em;
+    span {
+      padding-left: .5em;
+    }
+  }
+  &-heart {
+    color: red;
+    span {
+      color: red;
+    }
+  }
+  &-retweet {
+    color: green;
+    span {
+      color: green;
+    }
+  }
+  &-comment, &-envelope {
+    color: #7E8D9A;
+    sapn {
+      color: #7E8D9A;
+    }
+  }
+
+}

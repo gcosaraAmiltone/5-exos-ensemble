@@ -4,8 +4,7 @@ import axios from 'axios';
 import { WEATHER_REQUEST, setWeatherData } from './reducer';
 
 const logMiddleware = store => next => (action) => {
-  console.log('MIdleware');
-  next(action);
+  //console.log('MIdleware');
   
   switch (action.type) {
 
@@ -15,12 +14,9 @@ const logMiddleware = store => next => (action) => {
         //'http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=c43cdb00d4e5df5c5224beeb49b93999'
       )
         .then(response => {  
-          console.log("res =>", response.data.data);
+          //console.log("res =>", response.data.data);
           
-          const weatherData = {
-            data: response.data.data,
-          };
-          const actionSaveUser = setWeatherData(response.data.data);
+          const actionSaveUser = setWeatherData(response.data.data );
           store.dispatch(actionSaveUser);
           
           

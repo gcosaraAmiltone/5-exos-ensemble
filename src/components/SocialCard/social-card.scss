@@ -1,0 +1,13 @@
+.social-card {
+    text-align: center;
+    width: 600px;
+    display: flex;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    &-card {
+      margin-top: 2em;
+      display: flex;
+    }
+  }
+  

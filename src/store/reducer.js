@@ -1,10 +1,23 @@
 // == Initial State
 const initialState = {
-  data: [],    
-  tempMax: 1,
-  dayName: [],
-  icon: '',
-  sevenDays: [],
+  weatherData: [],
+  socialCardData: [
+    {
+      pseudo: '@dccedia', 
+      firstname: 'Dave', 
+      lastname: 'Ceddia'
+    },
+    {
+      pseudo: '@gcosara', 
+      firstname: 'Guéna', 
+      lastname: 'Cosara'
+    },
+    {
+      pseudo: '@ttata', 
+      firstname: 'Toto', 
+      lastname: 'Tata'
+    },    
+  ],
   };
   
 // == Types
@@ -17,7 +30,7 @@ const reducer = (state = initialState, action = {}) => {
     case SET_WEATHER_DATA:
       return {
         ...state,
-        data: action.weatherData,         
+        weatherData: action.weatherData,         
       };
 
     default:

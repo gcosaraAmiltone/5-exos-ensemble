@@ -15,7 +15,7 @@ import WeatherApp from '../components/WeatherApp/WeatherApp';
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
 const mapStateToProps = (state, ownProps) => ({
-  data: state.data,
+  data: state.weatherData,
 });
 
 /* === Actions ===

@@ -8,12 +8,12 @@ import Degrees from '../Degrees/Degrees';
 import './weather-app.scss';
 
 const WeatherApp = ({ data }) => { 
-    console.log('data',data);
+    //console.log('data',data);
        
     return (
         <div className="weather-app">
-            {(data != []) && data.map(day => {
-                console.log('data length =>', data.length);
+            {(data !== []) && data.map(day => {
+                //console.log('data length =>', data.length);
                 const days = [
                     'Dim',
                     'Lun',
@@ -25,17 +25,16 @@ const WeatherApp = ({ data }) => {
                 ];
                 const currentDay = new Date(day.valid_date).getDay();
                 const dayName = days[currentDay]; 
-                console.log('current day =>', currentDay);
+                //console.log('current day =>', currentDay);
                 
                 return (
-                    <div className="weather-app-day">
-                    <Day dayName={dayName} />
-                    <Image icon={day.weather.icon} />
-                    <Degrees temp={day.temp} />
+                    <div key={day.valid_date} className="weather-app-day">
+                        <Day dayName={dayName} />
+                        <Image icon={day.weather.icon} />
+                        <Degrees temp={day.temp} />
                     </div>
                 )
                 }
-            
             )
             }      
         </div>
@@ -43,7 +42,7 @@ const WeatherApp = ({ data }) => {
 }
 
 WeatherApp.propTypes = {
-    doRequest: PropTypes.func.isRequired,
+    data: PropTypes.array.isRequired,
 };
 
 export default WeatherApp;

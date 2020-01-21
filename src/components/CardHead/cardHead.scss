@@ -1,0 +1,17 @@
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  &-content {
+    width: 60%;
+    text-align: left;
+    &-head {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      &-title {
+        font-weight: 500;
+      }
+    }
+  }
+}

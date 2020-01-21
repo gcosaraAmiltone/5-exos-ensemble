@@ -1,0 +1,68 @@
+.cardText {
+  width: 100%;
+  height: 23em;
+  border-radius: .5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1em;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  &-head {
+    background-color: #FFA003;
+    height: 15em;
+    padding: .5em;
+    border-radius: .5em .5em 0 0;
+    &-logo {
+      text-align: left;
+      color: white;
+      width: 3em;
+      height: 3em;
+      background-color: black;
+      text-transform: uppercase;
+      line-height: 3em;
+      font-weight: 500;
+      div {
+        text-align: center;
+      }
+    }
+    &-content {
+      font-size: 3em;
+      font-weight: 600;
+      color: white;
+    }
+    &-author {
+      margin-left: 22em;
+      width: 10em;
+      height: 3.4em;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: .2em;
+      &-name {
+        line-height: 3em;
+        color: #FFA003;
+        font-size: 1em;
+        font-weight: 500;
+        margin: 0 auto;
+      }
+      &-image {
+        width: 3em;
+        height: 3em;
+        background-color: black;
+      }
+    }
+  }
+  &-desc {
+    text-align: left;
+    padding: 1em;
+    &-p1 {
+      font-weight: bold;
+      margin: .3em 0;
+    }
+    &-p3 {
+      margin: .3em 0;
+      color: grey;
+    }
+  }  
+}
