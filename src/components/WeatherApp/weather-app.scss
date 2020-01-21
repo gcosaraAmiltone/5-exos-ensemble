@@ -1,0 +1,9 @@
+.weather-app {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+    &-day {
+        display: flex;
+        flex-direction: column;
+    }
+}

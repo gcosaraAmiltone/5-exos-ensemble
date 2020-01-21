@@ -1,0 +1,26 @@
+.header {
+    min-height: 3em;
+    background-color: lightblue;
+    text-align: center;
+    &-title {
+        padding: 1em;
+        font-size: 1.5em;
+    }    
+    &-application {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 auto;
+        padding: 1em;
+        font-size: 1.1em;
+        &-link {
+            &:hover {
+                color: grey;
+            }            
+        }
+        .active {
+            color: #e55e75;
+        }
+    }
+    
+}
