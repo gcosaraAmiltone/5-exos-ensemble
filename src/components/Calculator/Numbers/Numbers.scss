@@ -1,0 +1,41 @@
+.Numbers {
+    width: calc((100%/4)*3);
+    float: left;
+    &-clear {
+        height: 5em;
+        border-bottom: 1px solid #93122B;
+        cursor: pointer;
+        div {
+            color: #735454;
+            text-align: center;            
+            line-height: 2.5em;
+            font-size: 2em;
+
+        }
+    }
+
+    &-nums {
+        display: flex;
+        flex-wrap: wrap;
+        .num {
+            width: 5em;
+            height: 5em;
+            border-bottom: 1px solid #93122B;
+            cursor: pointer;
+            div {
+                    height: 100%;
+                    font-weight: 500;
+                    color: black;
+                    font-size: 3em;                    
+                    box-sizing: border-box;
+                    line-height: 1.5em;
+                    border-bottom: 1px solid #93122B;
+                    border-right: 1px solid #93122B;
+               
+            }
+
+        }
+
+    }
+}
+

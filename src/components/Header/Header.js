@@ -18,7 +18,6 @@ const Header = ({ doRequest }) => {
                     exact
                     to="/social-card"
                     className="header-application-link"
-                    onClick={doRequest}
                 >                
                     Social Card 
                 </NavLink>
@@ -34,7 +33,6 @@ const Header = ({ doRequest }) => {
                     exact
                     to="/calculator"
                     className="header-application-link"
-                    onClick={doRequest}
                 >                
                     Calculator 
                 </NavLink>

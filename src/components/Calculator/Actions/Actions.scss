@@ -1,0 +1,25 @@
+.Actions {
+    width: calc(100%/4);
+    float: left;
+    display: flex;
+    flex-direction: column;
+    &:nth-last-child(1) {
+        border-bottom: none;
+    }
+    .operation {
+        height: 5em;
+        background-color: #F2274F;
+        border-bottom: 1px solid #93122B;
+        cursor: pointer;
+        div {
+            line-height: 1em;
+            text-align: center;
+        }
+        
+    }
+  
+
+
+}
+
+

@@ -1,0 +1,17 @@
+.Input {
+    height: 6em;
+    width: 100%;
+    background-color: #433437;
+    &-field {
+        height: 100%;
+        font-weight: 500;
+        color: white;
+        font-size: 3em;
+        text-align: end;
+        padding: .2em;
+        box-sizing: border-box;
+        line-height: 1.5em;
+        border-bottom: 1px solid red;
+    }
+}
+
